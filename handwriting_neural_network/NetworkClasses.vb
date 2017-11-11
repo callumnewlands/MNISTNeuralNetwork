@@ -100,7 +100,6 @@ Module NetworkClasses
                 For j = 0 To outputs(0).numberOfRows - 1
                     Dim y As Double = predictions(i).Values(j)
                     Dim a As Double = outputs(i).Values(j)
-                    'TODO WHAT DOES THIS DO AT 0
                     sum += (y * Math.Log(a)) + ((1 - y) * Math.Log(1 - a))
                 Next
             Next
